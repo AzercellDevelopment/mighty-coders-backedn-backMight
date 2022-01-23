@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block cssimports %}
+    <link rel="stylesheet" href="{% static 'css/demo_1/login.css' %}">
+    {% endblock %}
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <section class="user-area">
+        <div class="container">
+            <div class="section-title">
+                <h2>Create an account!</h2>
+                <p>Welcome to Azerbaijan </p>
+            </div>
+            <div class="contact-form-action">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" placeholder="Enter your Username">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <input class="form-control" type="email" name="email" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="password" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 form-condition">
+                            <div class="agree-label">
+                                <input type="checkbox" id="chb1">
+                                <label for="chb1">
+                                    I agree with seku
+                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                </label>
+                            </div>
+                            <div class="agree-label">
+                                <input type="checkbox" id="chb2">
+                                <label for="chb2">
+                                    I agree with seku
+                                    <a href="terms-conditions.html">Terms & Conditions</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="default-btn" type="submit">
+                                Register Account
+                            </button>
+                        </div>
+                        <div class="col-12">
+                            <p class="account-desc">
+                                Already have an account?
+                                <a href="log-in.html"> Log In</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,68 @@
+#Location{
+    padding: 80px 0;
+    .top-head{
+        text-align: center;
+        margin:0 auto;
+        h2{
+            font-weight: 700;
+            font-size: 2.3rem;
+            padding: 5px 0;
+            font-family: $myFamily;
+            span{
+                color: $myColor4;
+            }
+        }
+        p{
+            width: 700px;
+            font-size: 18px;
+            text-align: center;
+            margin:0 auto;
+        }
+    }
+    .Location-item{
+        padding: 60px 0;
+        width: 285px;
+        margin:0 auto;
+        h3{
+            text-align: center;
+            padding: 20px 0;
+            font-weight: 700;
+            color: $myColor;
+        }
+        .photo{
+            position: relative;
+            img{
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                width: 310px;
+                height: 300px;
+                object-fit: cover;
+                cursor: pointer;
+                }
+                &::after{
+                    content:'';
+                    opacity: 0.3;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 5;
+                    transition: all ease 0.2s;
+                    display: block;
+                    top: 50%;
+                    background: rgba(0,0,0,0.7);
+                    transform: translateY(-50%);
+                    left: 0;
+                    margin: 0 auto;
+                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                 }
+                 &:hover{
+                     &::after{
+                         width: 0%;
+                         height: 0%;
+                         left: 50%;
+                     }
+                 }
+   
+
+            }
+        }
+    }

@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+{% load static  %}
+
+{% block cssimports %}
+<link rel="stylesheet" href="{% static 'vendors/datatables.net-bs4/dataTables.bootstrap4.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
+    <div class="d-flex align-items-center flex-wrap text-nowrap">
+      <a href="/categories/create/" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
+        <i class="btn-icon-prepend" data-feather="plus"></i>
+        Add Category
+      </a>
+    </div>
+  </div>
+
+				<div class="row">
+					<div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Categories</h6>
+                <div class="table-responsive">
+                  <table id="myTable" class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Icon</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for category in categories %}
+                        <tr>
+                          <td>{{category.category_name}}</td>
+                            <td><img src="{{ category.category_icon.url }}"></img></td>
+                        <td><a href="/categories/edit/{{ category.category_id }}" class="btn btn-warning">Edit</a></td>
+                        <td><a href="/categories/delete/{{ category.category_id }}" id="deleteButton" class="btn btn-danger">Delete</a></td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+					</div>
+				</div>
+{% endblock %}
+
+{% block jsimports %}
+<script src="{% static 'vendors/datatables.net/jquery.dataTables.js' %}"></script>
+<script src="{% static 'vendors/datatables.net-bs4/dataTables.bootstrap4.js' %}"></script>
+
+<script>
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+{% endblock %}

@@ -1,0 +1,141 @@
+@media (max-width:900px){
+    .sec-heading{
+      display: none;
+    }
+}
+@media (max-width:700px){
+  #Dish{
+    .top-head{
+      width: 300px;
+    }
+  }
+}
+@media (max-width:800px){
+  #Location{
+    .top-head{
+      p{
+        width: 300px;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  #header {
+
+
+
+      .header-icons {
+
+          .header-language,
+          .header-search {
+              display: none;
+          }
+      }
+  }
+
+  #video {
+
+      .adventure {
+          .adventure-bottom {
+              .adventure-box {
+                  h4 {
+                      font-size: 16px;
+                  }
+              }
+
+          }
+      }
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  #header {
+
+      .header-text,
+      .header-icons {
+          display: none;
+      }
+
+      .header-mobile {
+          display: block !important;
+      }
+  }
+
+
+  #video {
+
+      .adventure {
+
+          .adventure-top{
+              span{
+                  font-size: 10px;
+              }
+              h2{
+                  font-size: 18px;
+              }
+          }
+          .adventure-bottom {
+              .adventure-box{
+                  img{
+                      width: 50px;
+                  }
+
+                  p{
+                      font-size: 12px;
+                  }
+              }
+          }
+      }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  
+
+  #video {
+
+      .adventure {
+
+          .adventure-top{
+              span{
+                  font-size: 10px;
+              }
+              h2{
+                  font-size: 18px;
+              }
+          }
+          .adventure-bottom {
+              .adventure-box{
+                  border: none;
+                  img{
+                      width: 40px;
+                      padding: 5px;
+                  }
+
+                  h4{
+                      display: none;
+                  }
+
+                  p{
+                      display: none;
+                  }
+              }
+          }
+      }
+  }
+
+  #footer{
+    .footer-top{
+      h4{
+        font-size: 18px;
+      }
+    }
+  }
+}

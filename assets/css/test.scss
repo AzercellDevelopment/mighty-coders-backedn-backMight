@@ -1,0 +1,45 @@
+#myLoader {
+    width: 100%;
+    height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #CB1511;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+
+
+        animation: loaderAni 2s infinite;
+
+
+    }
+
+
+}
+
+
+@keyframes loaderAni {
+
+    0% {
+        top: 50%;
+
+        // transform: translate(-50%, -50%);
+    }
+
+    50% {
+        top: 43%;
+    }
+
+    100% {
+        top: 50%;
+
+    }
+}

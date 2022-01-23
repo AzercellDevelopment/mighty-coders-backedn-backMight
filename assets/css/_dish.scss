@@ -1,0 +1,75 @@
+#Dish{
+    background-color: #F1F2F6;
+    margin-top: 80px;
+    .top-head{
+        text-align: center;
+        padding: 40px 0;
+        width: 600px;   
+        margin: auto;
+        h2{
+            font-weight: 700;
+            font-size: 2.3rem;
+            padding: 5px 0;
+            font-family: $myFamily;
+            span{
+                color: $myColor4;
+            }
+        }
+        p{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+      
+   .Content{
+    .slick-next:before,.slick-prev:before{
+        display: none;
+    }
+     .content-item{
+      background-color: #fff;
+      padding: 20px 20px 50px 20px;
+      margin-left: 30px;
+      height: 100%;
+      border-radius: 10px;
+          position: relative;
+     .img{
+         img{
+             height: 250px;
+             object-fit: cover;
+            
+         }
+       
+        }
+     .text{
+         padding: 10px;
+         text-align: center;
+         h5{
+             color: $myColor;
+             padding: 15px 0;
+             font-weight: bold; 
+         }
+         p{
+             font-size: 1.1rem;
+         }
+        .btn{
+            padding-top: 20px;
+            transition: .3s ease-in-out;
+            &:hover{
+                a{
+                    background-color: $myColor;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+                border-radius: 5px;
+                background-color:$myColor4;
+                padding: 12px 20px;
+            }
+        }
+      
+    }
+}
+   }
+}

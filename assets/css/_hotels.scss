@@ -1,0 +1,191 @@
+#Hotels{
+    background-color: #F1F2F6;
+    padding: 80px 0;
+    .top-head{
+        text-align: center;
+        h2{
+            font-weight: 700;
+            font-size: 2.3rem;
+            padding: 5px 0;
+            font-family: $myFamily;
+            span{
+                color: $myColor4;
+            }
+        }
+        p{
+            font-size: 18px;
+            width: 470px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    #Tab{
+        margin: 50px 30px;
+        min-height: 400px;
+        .Tab-top{
+            text-align: center;
+            button{
+                padding: 12px 20px;
+                background-color:#fff;
+                color: $myColor;
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+                transition: .3s ease-in-out;
+                box-shadow: 0 0 10px 0 #ccc;
+                font-weight: 600;
+                margin-left: 10px;
+                &.active{
+                    background: $myColor4;
+                    color: #fff;
+                }
+                     
+            }
+            .Tab-down{
+                margin: 0 auto;
+                padding: 20px;
+                .content{
+                    display: none;
+                    &.active{
+                        display: block;
+                    }
+                    .content-item{
+                        background-color: #fff;
+                        padding: 20px 20px 50px 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 5px 2px #ccc;
+                        position: relative;
+                        .stars{
+                            position: absolute;
+                            right: 25px;
+                            top: 20px;
+                            i{
+                             margin: 0;
+                             padding: 0;
+                             line-height: 1;
+                             font-size: 12px;
+                             list-style: none;
+                             color: $myColor4;
+                             cursor: pointer;
+                             &:hover{
+                                 color:#fcd205;
+                             }
+                            }
+                         }
+                        .img{
+                            position: relative;
+                            .open{
+                                position: absolute;
+                                left: 25px;
+                                top: 20px;
+                                cursor: pointer;
+                                span{
+                                    background-color: #28A745;
+                                    color: #fff;
+                                    padding: 4px 6px;
+                                    border-radius: 5px;
+                                    font-size: 0.9rem;
+                                }
+                                
+                            }
+                            .icons{
+                                position: absolute;
+                                bottom: 10px;
+                                right: 10px;
+                                text-align: right;
+                                span{
+                                    padding: 4px 8px;
+                                    border-radius: 5px;
+                                    background-color: $myColor;
+                                    color: #fff;
+                                    font-size: 0.8rem;
+                                    font-weight: 700;
+                                }
+                               a{
+                                   text-decoration: none;
+                                   margin-left: 7px;
+                                i{
+                                    padding: 6px 6px;
+                                    border-radius: 5px;
+                                    color: #fff;
+                                    font-size: 0.8rem;
+                                    transition: .3s ease-in-out;
+                                    &:hover{
+                                        &.heart{
+                                            background-color: $myColor4;
+                                        }
+                                        &.plus{
+                                            background-color: $myColor;
+                                        }
+                                    }
+                                }
+                                .heart{
+                                    background-color: $myColor;
+    
+                                }
+                                .plus{
+                                    background-color: $myColor4;
+    
+                                }
+                            
+                               }
+                            }
+                        }
+                        .middle{
+                            width: 100px;
+                            height: 80px;
+                            z-index: 2;
+                            margin: -50px auto 0;
+                            position: relative;
+                            img{
+                            background: #fff;
+                            padding: 5px;
+                            border-radius: 50%;
+                             box-shadow: 0 0 5px 2px #888;
+                            }
+                            }
+                        .text{
+                            padding: 10px;
+                            h5{
+                                color: $myColor;
+                                padding: 15px 0;
+                                font-weight: bold;
+                                border-bottom: 1px solid #ccc;
+                                transition: .3s ease-in-out ;
+                                cursor: pointer;
+                                &:hover{
+                                    color: $myColor4;
+                                }
+                                i{
+                                    color: #28A745;
+                                    font-size: 0.9rem;
+                                }
+                            }
+                           .location{
+                            padding: 15px;
+                            border-bottom: 1px solid #ccc;
+                            .img{
+                              padding: 12px;
+                              box-shadow: 0 0 10px 0 #ccc;
+                              border-radius: 50%;
+                            }
+                            p{
+                                padding-left: 20px;
+                                font-size: 1rem;
+                                text-align: left;
+                            }
+                           
+                           }
+                          
+                        }    
+                           
+  
+                           
+                        }
+                    }
+                   
+                }
+            }
+        }
+    
+    }   

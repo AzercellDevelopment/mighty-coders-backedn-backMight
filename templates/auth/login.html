@@ -1,0 +1,71 @@
+{% load crispy_forms_tags %}
+{% load static  %}
+
+
+{% load static  %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Traveller App Admin</title>
+	<!-- core:css -->
+	<link rel="stylesheet" href="{% static 'vendors/core/core.css' %}">
+	<!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href= "{% static 'vendors/bootstrap-datepicker/bootstrap-datepicker.min.css' %}">
+	<!-- end plugin css for this page -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="{% static 'fonts/feather-font/css/iconfont.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/flag-icon-css/css/flag-icon.min.css' %}">
+	<!-- endinject -->
+  <!-- Layout styles -->
+	<link rel="stylesheet" href="{% static 'css/demo_1/style.css' %}">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href= "{% static 'static/images/favicon.png' %}"/>
+</head>
+<body>
+
+
+
+	<div class="main-wrapper">
+		<div class="page-wrapper full-page">
+			<div class="page-content d-flex align-items-center justify-content-center">
+
+				<div class="row w-100 mx-0 auth-page">
+					<div class="col-md-8 col-xl-6 mx-auto">
+						<div class="card">
+							<div class="row">
+                <div class="col-md-4 pr-md-0">
+                  <div class="auth-left-wrapper">
+
+                  </div>
+                </div>
+
+                <div class="col-md-8 pl-md-0">
+                  <div class="auth-form-wrapper px-4 py-5">
+                    <a href="#" class="noble-ui-logo d-block mb-2">AzTraveller App Admin</a>
+                    <h5 class="text-muted font-weight-normal mb-4">Welcome ! Please Sign Up.</h5>
+                    <form method= "post" class="forms-sample">
+
+                        {{form|crispy}}
+                        {% csrf_token %}
+
+                      <div class="mt-3">
+                        <button  class="btn btn-primary mr-2 mb-2 mb-md-0 text-white">Login</button>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>

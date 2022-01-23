@@ -1,0 +1,1502 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AzTrvel - Homepage</title>
+    <link rel="shorcut icon" href="{% static 'img/Logo.png' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'js/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'js/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/new/style.css' %}">
+</head>
+
+<body>
+
+
+    <div id="myLoader">
+
+        <img class="pin" src="{% static 'img/pin (1).png' %}" alt="">
+    </div>
+
+    <!-- Header starts here -->
+
+    <header id="header">
+        <div class="container70">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <!-- header-logo starts here -->
+                <div class="header-logo ">
+                    <div class=" d-flex align-items-center ">
+                        <img src="{% static 'img/logo-new.png' %}" alt="">
+
+                        <h4>
+                            Az<span>Travel</span>
+                        </h4>
+
+                    </div>
+
+                </div>
+                <!-- header-logo ends here -->
+
+                <!-- header-text starts here -->
+
+                <div class="header-text">
+                    <ul class="d-flex">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tours.html">
+                                Destinations
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Experience
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- header-text ends here -->
+
+                <!-- header-icons starts here -->
+                <div class="header-icons">
+
+                    <div class="d-flex">
+
+
+                        <!-- header-language starts here -->
+                        <div class="header-language">
+                            <div class="language-top">
+                                <div class="d-flex">
+                                    <div class="language-left">
+
+                                        <img class="img-fluid" src="{% static 'img/1.png' %}" alt="">
+                                    </div>
+
+                                    <span>ENG</span>
+                                </div>
+                            </div>
+
+
+                            <div class="language-dropdown">
+
+
+                                <div class="container">
+                                    <ul>
+                                        <li>
+
+                                            <div class="languages">
+                                                <div class="language-left">
+
+                                                    <img class="img-fluid" src="{%  static 'img/2.png' %}" alt="">
+
+
+                                                </div>
+                                                <span>
+                                                    Azerbaijani
+                                                </span>
+                                            </div>
+
+
+                                        </li>
+                                        <li>
+
+                                            <div class="languages">
+                                                <div class="language-left">
+
+                                                    <img class="img-fluid" src="{%  static 'img/3.png' %}" alt="">
+                                                </div>
+                                                <span>
+                                                    Russian
+                                                </span>
+                                            </div>
+
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- header-language ends here -->
+
+                        <!-- header-search starts here -->
+                        <div class="header-search">
+
+                            <div class="search-top">
+                                <div class="search-icon active-icon">
+                                    <i class="fas fa-search"></i>
+
+                                </div>
+
+                                <div class="x-icon">
+                                    <i class="fas fa-search-minus"></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="search-dropdown">
+
+                                <div class="container">
+                                    <div class="myInput">
+                                        <div class="d-flex justify-content-between">
+                                            <input type="text">
+                                            <i class="fas fa-search"></i>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- header-search ends here -->
+
+                        <div class="header-login">
+                            <a href="#"> Login</a>
+
+
+                        </div>
+
+                        <div class="header-signUp">
+                            <a href="#">Sign up</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- header-icons ends here -->
+
+
+                <div class="header-mobile">
+
+                    <img class="drop-image" src="{% static 'img/menu.png' %}" alt="">
+
+
+
+                </div>
+
+                <div class="mobile-drop">
+
+
+                    <div class="drop-close">
+                        <img src="{% static ' img/cancel.png' %}" alt="">
+                    </div>
+                    <div class="drop-top">
+
+                        <input type="text">
+                        <i class="fas fa-search"></i>
+
+
+
+
+                    </div>
+
+                    <ul>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign up</a></li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+    <!-- Header ends here -->
+
+
+    <!-- video part starts here -->
+    <section id="video">
+
+        <video width="100%" height="auto" autoplay loop muted src="{%  static 'video/video_main.mp4' %}">
+        </video>
+
+        <div class="blurryVideo"></div>
+
+
+        <div class="adventure">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="adventure-top">
+                        <span>
+                            TRAVEL BY ACTIVITY
+                        </span>
+
+                        <h2>
+                            ADVENTURE & ACTIVITY
+                        </h2>
+                    </div>
+
+                    <div class="adventure-bottom">
+                        <div class="row">
+                            {% for category in categories %}
+                                <div class="col-2 ">
+                                <div class="adventure-box">
+                                    <img src="{{ category.category_icon.url }}" alt="">
+                                    <h4>
+                                        {{ category.category_name }}
+                                    </h4>
+                                    <p>15 Destinations</p>
+                                </div>
+                                </div>
+                            {% endfor %}
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- video part ends here -->
+
+    <!-- Location start -->
+    <section id="Location">
+        <div class="container">
+            <div class="top-head">
+                <div class="icon">
+                    <img width="40px" src="{% static 'image/tray.png' %}" alt="">
+                </div>
+                <div class="text">
+                    <h2>FIND BY <span>LOCATIONS</span></h2>
+                    <p>Discovering a land and its people is a truly unique experience. It takes you on a different
+                        journey every time, and opens the mind to seeing something new.</p>
+                </div>
+            </div>
+
+            <div class="Loc-Slider">
+                {%  for location in locations %}
+                <div class="col-lg-3 col-md-4">
+                    <div class="Location-item">
+                        <div class="photo">
+                            <img class="img-fluid" src="{{ location.location_image.url }}" alt="">
+                        </div>
+                        <h3>{{ location.location_name }}</h3>
+                    </div>
+                </div>
+                {% endfor %}
+        </div>
+        </div>
+    </section>
+    <!-- Location end -->
+    <!-- Hotels start -->
+    <section id="Hotels">
+        <div class="container">
+            <div class="top-head">
+                <div class="icon">
+                    <img width="40px" src="{%  static 'img/hotel.png' %}" alt="">
+                </div>
+                <div class="text">
+                    <h2>FIND BY <span>HOTELS</span></h2>
+                </div>
+            </div>
+            <!-- tab-menu -->
+            <div id="Tab">
+                <div class="Tab-top">
+                    <button> Baku</button>
+                    <button> Shaki</button>
+                    <button> Gabala</button>
+                    <button> Quba</button>
+                    <button> Qakh</button>
+                    <button> Mingachevir</button>
+                    <button> Ismayilli</button>
+                    <div class="Tab-down">
+                        <div class="content active">
+                            <div class="row">
+                                {% for hotel in hotels %}
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item my-2">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>${{ hotel.hotel_price_for_night }}/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{{ hotel.hotel_image.url }}" alt="">
+                                            <div class="icons">
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                {% for star in location.rating %}
+                                                <li><i class="fa fa-star"></i></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{{ hotel.hotel_icon_image.url }}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>{{ hotel.hotel_name }}<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{{ hotel.hotel_image.url }}" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <p>{{ hotel.hotel_adress }}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$22/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/194020858.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{% static 'img/winter-park-hotel.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Winter Park Hotel<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{% static 'img/location-pin.png' %}" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <p>Mirzaga Aliev 210 Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$17/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/238195351.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/parkway.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Parkway Inn Hotel & Spa<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Cəfər Cabbarlı küçəsi 29, Yasamal
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$19/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/217247159.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{% static 'img/Midtown.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Midtown Hotel Baku<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Səməd Vurğun küçəsi 32, Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$22/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/194020858.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/winter-park-hotel.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Winter Park Hotel<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{% static 'img/location-pin.png' %}" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <p>Mirzaga Aliev 210 Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$17/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/238195351.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{% static 'img/parkway.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Parkway Inn Hotel & Spa<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{% static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Cəfər Cabbarlı küçəsi 29, Yasamal
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$19/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/217247159.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/Midtown.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Midtown Hotel Baku<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Səməd Vurğun küçəsi 32, Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$22/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/194020858.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/winter-park-hotel.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Winter Park Hotel<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <p>Mirzaga Aliev 210 Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$17/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/238195351.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/parkway.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Parkway Inn Hotel & Spa<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{% static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Cəfər Cabbarlı küçəsi 29, Yasamal
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$19/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/217247159.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/Midtown.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Midtown Hotel Baku<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Səməd Vurğun küçəsi 32, Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$22/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/194020858.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/winter-park-hotel.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Winter Park Hotel<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <p>Mirzaga Aliev 210 Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$17/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/238195351.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/parkway.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Parkway Inn Hotel & Spa<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Cəfər Cabbarlı küçəsi 29, Yasamal
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$19/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/217247159.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{% static 'img/Midtown.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Midtown Hotel Baku<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Səməd Vurğun küçəsi 32, Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$22/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/194020858.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/winter-park-hotel.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Winter Park Hotel<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <p>Mirzaga Aliev 210 Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$17/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/238195351.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/parkway.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Parkway Inn Hotel & Spa<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Cəfər Cabbarlı küçəsi 29, Yasamal
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$19/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{%  static 'img/217247159.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/Midtown.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Midtown Hotel Baku<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Səməd Vurğun küçəsi 32, Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$22/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/194020858.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/winter-park-hotel.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Winter Park Hotel<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <p>Mirzaga Aliev 210 Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$17/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/238195351.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{% static 'img/parkway.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Parkway Inn Hotel & Spa<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{% static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Cəfər Cabbarlı küçəsi 29, Yasamal
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="content-item">
+                                        <div class="img">
+                                            <div class="open">
+                                                <span>$19/ night</span>
+                                            </div>
+                                            <img class="img-fluid" src="{% static 'img/217247159.jpg' %}" alt="">
+                                            <div class="icons">
+                                                <span>5</span>
+                                                <a href="#">
+                                                    <i class="plus fas fa-search-plus"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="heart far fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="stars d-flex list-unstyled m-0 p-0">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle d-flex">
+                                            <img width="80px" src="{%  static 'img/Midtown.jpg' %}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5>Midtown Hotel Baku<i class="fas fa-check-circle"></i></h5>
+                                            <div class="location d-flex justify-content-between align-items-center">
+                                                <div class="img">
+                                                    <img width="20px" src="{%  static 'img/location-pin.png' %}" alt="">
+
+                                                </div>
+                                                <div class="left">
+                                                    <p> Səməd Vurğun küçəsi 32, Nasimi district
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hotels end -->
+    <!-- Map start-->
+    <section id="Map">
+         <div class="sec-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="top">
+
+                            <div class="text">
+                                <h1>
+                                    Salam Azerbaijan
+                                </h1>
+                                <h2>
+                                    practical information
+                                </h2>
+                                <p>
+                                    Here in Azerbaijan you can count on the help of our generous people in every step
+                                    of your journey.
+                                    Still, here is some useful information we’d like you to know before you jump on a
+                                    plane.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{% static 'img/map.svg' %} }}" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item">
+                        <div class="thumbail-media">
+                            <img class="w-100" src="{% static 'img/1-img.jpg' %}" alt="">
+                        </div>
+                        <div class="thumbnail-text">
+                            <h4>
+                                <a href="/visas" tabindex="0" data-uw-styling-context="true">Visa</a>
+                            </h4>
+                            <p>
+                                Find out if you need a visa to enter Azerbaijan and learn how to apply to get your
+                                e-visa. It is easy and fast.
+                                <a class="link-more" href="/visas" tabindex="0" data-uw-styling-context="true">learn
+                                    more</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item">
+                        <div class="thumbail-media">
+                            <img class="w-100" src="{% static 'img/2-img.jpg' %}" alt="">
+                        </div>
+                        <div class="thumbnail-text">
+                            <h4>
+                                <a href="/visas" tabindex="0" data-uw-styling-context="true">Practical information</a>
+                            </h4>
+                            <p>
+                                Planning a trip can get really complicated, so to make it easier for you here’s a list
+                                of all the things you need to consider when planning a visit to Azerbaijan.
+                                <a class="link-more" href="/visas" tabindex="0" data-uw-styling-context="true">learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item">
+                        <div class="thumbail-media">
+                            <img class="w-100" src="{%  static 'img/3-img.jpg' %}" alt="">
+                        </div>
+                        <div class="thumbnail-text">
+                            <h4>
+                                <a href="/visas" tabindex="0" data-uw-styling-context="true">Azerbaijan through the
+                                    seasons</a>
+                            </h4>
+                            <p>
+                                There’s plenty to see and do in Azerbaijan all year round, but every season has its own
+                                special vibe;
+                                <a class="link-more" href="/visas" tabindex="0" data-uw-styling-context="true">learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item">
+                        <div class="thumbail-media">
+                            <img class="w-100" src="{% static 'img/4-img.jpg' %}" alt="">
+                        </div>
+                        <div class="thumbnail-text">
+                            <h4>
+                                <a href="/visas" tabindex="0" data-uw-styling-context="true">Useful vocabulary</a>
+                            </h4>
+                            <p>
+                                English and Russian are widely understood and spoken in the capital, Baku, but as you
+                                travel across the country knowing a few words of Azerbaijani will definitely enrich your
+                                experiences.
+                                <a class="link-more" href="/visas" tabindex="0" data-uw-styling-context="true">learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map end-->
+    <!-- Dish start -->
+    <section id="Dish">
+        <div class="top-head">
+            <div class="icon">
+                <img width="40px" src="{%  static 'img/tray.png' %}" alt="">
+            </div>
+            <div class="text">
+                <h2>POPULAR <span>DISHES</span></h2>
+                <p>Azerbaijani cuisine is full of different types of fruits and vegetables, <br> such as aubergine,
+                    tomato,
+                    sweet pepper, spinach, cabbage, onion, sorrel, beet, radish, cucumber, green beans. Rice and
+                    products made from flour are widely used in national cuisine.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="Content d-flex">
+                {% for meal in meals %}
+                <div class="col-lg-4">
+                    <div class="content-item">
+                        <div class="img">
+                            <img class="img-fluid" src="{{ meal.meal_image.url }}" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>{{ meal.meal_name }}</h5>
+                            <p>
+                                {{ meal.meal_description|truncatechars:100 }} </p>
+                            <div class="btn">
+                                <a href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col-lg-4">
+                    <div class="content-item">
+                        <div class="img">
+                            <img class="img-fluid" src="{%  static 'img/plov.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>Plov</h5>
+                            <p>
+                                Plov is one of the most widespread dishes in Azerbaijan, with more than 40 different
+                                recipes. Plovs have different names depending on the main ingredients accompanying rice.
+                            </p>
+                            <div class="btn">
+                                <a href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="content-item">
+                        <div class="img">
+                            <img class="img-fluid" src="{%  static 'img/lavangi.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>Lavangi</h5>
+                            <p>
+                                Levengi or Lavangi is a national dish of Azerbaijan and features in Talysh.
+                                .It is a fish or chicken stuffed with walnuts, onions and various
+                                condiments and baked in the oven </p>
+                            <div class="btn">
+                                <a href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="content-item">
+                        <div class="img">
+                            <img class="img-fluid" src="{% static 'img/dolma.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>Dolma</h5>
+                            <p>
+                                A special type of food, commonly called dolma, cooked using grape leaves. The
+                                composition of the leaf stuffing is slightly different from other stuffing.</p>
+                            <div class="btn">
+                                <a href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="content-item">
+                        <div class="img">
+                            <img class="img-fluid" src="{%  static 'img/piti.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>Piti</h5>
+                            <p>
+                                Piti is an Azerbaijani soup in the cuisines of the South Caucasus, its bordering
+                                nations, and Central Asia, and is prepared in the oven in individual crocks with a
+                                glazed interior.</p>
+                            <div class="btn">
+                                <a href="#">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dish end -->
+
+
+    <footer id="footer">
+
+        <!-- footer-top starts here -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="footer-about">
+                            <h4>
+                                About Us
+                            </h4>
+
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ipsam quas ex libero in
+                                enim iste non dolores deleniti exercitationem, cum distinctio velit ducimus excepturi.
+                                Aliquid vitae omnis rem non!</span>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="footer-socials">
+
+                            <h4>
+                                Follow Us :
+                            </h4>
+                            <ul class="social-icons">
+                                <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="footer-quicks">
+                            <h4>Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- footer-top starts here -->
+
+
+        <!-- footer-copyright start -->
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="copyright-left">
+                        <span>
+
+                            ©Copyright 2022 <a href="#">AzTravel</a>
+                        </span>
+                    </div>
+
+                    <div class="copyright-right">
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#">
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer-copyright end -->
+
+    </footer>
+
+
+    <div class="scrollBtn">
+        <img src="{%  static 'img/airplane.png' %}" alt="">
+
+    </div>
+
+    <script src="{% static 'js/jquery-3.6.0.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{%  static 'js/main.js' %}"></script>
+</body>
+
+</html>

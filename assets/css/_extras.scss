@@ -1,0 +1,98 @@
+#myLoader {
+    width: 100%;
+    height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: $myColor4;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+
+
+        animation: loaderAni 2s infinite;
+
+
+    }
+
+
+}
+
+// scrollBtn starts here
+// this is for scroll to top button
+.scrollBtn {
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    bottom: -150px;
+    // background-color: #297ea0;
+    // border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s ease-in-out;
+    z-index: 999;
+    opacity: 1;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+    &.activeBtn{
+        animation: carAni 1.5s ease-in-out;
+    }
+
+
+    &:hover {
+        i {
+            color: red;
+        }
+    }
+
+    img{
+        width: 50px;
+       
+    }
+}
+
+// scrollBtn ends here
+
+
+@keyframes loaderAni {
+
+    0% {
+        top: 50%;
+
+        // transform: translate(-50%, -50%);
+    }
+
+    50% {
+        top: 43%;
+    }
+
+    100% {
+        top: 50%;
+
+    }
+}
+
+
+@keyframes carAni {
+    
+    from{
+        // bottom: 35px;
+        bottom: 3%;
+    }
+    to{
+        bottom: 100%;
+    }
+}
+
